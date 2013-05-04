@@ -1,0 +1,5 @@
+<rules>
+  <rule>
+    <match lemma="ﻭ" tags="cnjcoo"><select lemma="ו" tags="cnjcoo"/></match>
+  </rule>
+</rules>
