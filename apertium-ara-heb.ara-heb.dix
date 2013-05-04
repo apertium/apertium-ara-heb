@@ -1,0 +1,28 @@
+<dictionary>
+  <alphabet/>
+
+  <sdefs>
+    <sdef n="n"       c="Noun"/>
+    <sdef n="adv"     c="Adverb"/>
+    <sdef n="np"      c="Proper noun"/>
+    <sdef n="post"    c="Postposition"/>
+    <sdef n="cnjcoo"  c="Co-ordinating conjunction"/>
+
+  </sdefs>
+
+  <section id="main" type="standard">
+    <!-- SECTION: Conjunctions -->
+
+    <e><p><l>و<s n="cnjcoo"/></l><r>ו<s n="cnjcoo"/></r></p></e>
+
+    <!-- SECTION: Nouns -->
+
+    <!-- SECTION: Proper nouns -->
+
+
+    <!-- SECTION: Adverbs -->
+
+
+    <!-- SECTION: Punctuation -->
+  </section>
+</dictionary>

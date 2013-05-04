@@ -1,0 +1,7 @@
+* text=auto !eol
+/Makefile -text
+/apertium-ara-heb.ara-heb.dix -text
+/apertium-ara-heb.ara.dix -text
+/apertium-ara-heb.heb.dix -text
+texts/story.ara.txt -text svneol=unset#application/octet-stream
+texts/story.heb.txt -text
