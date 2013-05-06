@@ -1,28 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
   <alphabet/>
 
   <sdefs>
     <sdef n="n"       c="Noun"/>
     <sdef n="adv"     c="Adverb"/>
+		<sdef n="adj"			c="Adjective"/>
     <sdef n="np"      c="Proper noun"/>
     <sdef n="post"    c="Postposition"/>
     <sdef n="cnjcoo"  c="Co-ordinating conjunction"/>
-
+    <sdef n="cm"			c="Comma"/>
+    <sdef n="sent"		c="Sentence marker"/>
   </sdefs>
 
   <section id="main" type="standard">
     <!-- SECTION: Conjunctions -->
-
     <e><p><l>و<s n="cnjcoo"/></l><r>ו<s n="cnjcoo"/></r></p></e>
 
     <!-- SECTION: Nouns -->
+		<e><p><l>أخ<s n="n"/></l><r>אח<s n="n"/></r></p></e>
+		<e><p><l>بيت<s n="n"/></l><r>בית<s n="n"/></r></p></e>
+		<e><p><l>عمر<s n="n"/><s n="m"/></l><r>בן<s n="n"/><s n="m"/></r></p></e> <!--sort of a kludge (TODO add suffix)-->
+		<e><p><l>حديقة<s n="n"/></l><r>גינה<s n="n"/></r></p></e>
+		<e><p><l>خارج<s n="n"/></l><r>חוץ<s n="n"/></r></p></e>
+		<e><p><l>قطة<s n="n"/><s n="f"/></l><r>חתול<s n="n"/><s n="m"/></r></p></e>
+		<e><p><l>ولد<s n="n"/><s n="m"/></l><r>ילד<s n="n"/><s n="m"/></r></p></e>
+		<e><p><l>بنت<s n="n"/><s n="f"/></l><r>ילד<s n="n"/><s n="f"/></r></p></e>
+		<e><p><l>كلب<s n="n"/></l><r>כלב<s n="n"/></r></p></e>
 
     <!-- SECTION: Proper nouns -->
+		<e><p><l>جيمس<s n="np"/></l><r>ג'ימס<s n="np"/></r></p></e>
+		<e><p><l>مريم<s n="np"/></l><r>מרי<s n="np"/></r></p></e>
 
+		<!-- SECTION: Adjectives -->
+		<e><p><l>كبير<s n="adj"/></l><r>גדול<s n="adj"/></r></p></e>
+		<e><p><l>حر<s n="adj"/></l><r>חם<s n="adj"/></r></p></e>
+		<e><p><l>نائم<s n="adj"/></l><r>ישן<s n="adj"/></r></p></e>
+		<e><p><l>هلو<s n="adj"/></l><r>נחמד<s n="adj"/></r></p></e>
+		<e><p><l>صغير<s n="adj"/></l><r>קטן<s n="adj"/></r></p></e>
+		<e><p><l>بارد<s n="adj"/></l><r>קר<s n="adj"/></r></p></e>
+		<e><p><l>سعيد<s n="adj"/></l><r>שמח<s n="adj"/></r></p></e>
 
     <!-- SECTION: Adverbs -->
-
+		<e><p><l>أمس<s n="adv"/></l><r>אתמול<s n="adv"/></r></p></e>
+		<e><p><l>معا<s n="adv"/></l><r>ביחד<s n="adv"/></r></p></e>
+		<e><p><l>ايضا<s n="adv"/></l><r>גם<s n="adv"/></r></p></e>
+		<e><p><l>اليوم<s n="adv"/></l><r>היום<s n="adv"/></r></p></e>
+		<e><p><l>جدا<s n="adv"/></l><r>מאוד<s n="adv"/></r></p></e>
+		<e><p><l>الان<s n="adv"/></l><r>עכשיו<s n="adv"/></r></p></e>
+		<e><p><l>دائما<s n="adv"/></l><r>תמיד<s n="adv"/></r></p></e>
 
     <!-- SECTION: Punctuation -->
+		<e><p><l>؟<s ="sent"/></l><r>؟<s n="sent"/></r></p></e>
+		<e><p><l>.<s ="sent"/></l><r>.<s n="sent"/></r></p></e>
+		<e><p><l>!<s ="sent"/></l><r>!<s n="sent"/></r></p></e>
+		<e><p><l>:<s ="sent"/></l><r>:<s n="sent"/></r></p></e>
+		<e><p><l>؛<s ="sent"/></l><r>؛<s n="sent"/></r></p></e>
+		<e><p><l>"<s ="sent"/></l><r>"<s n="sent"/></r></p></e>
+		<e><p><l>،<s ="cm"/></l><r>،<s n="cm"/></r></p></e>
+		
   </section>
 </dictionary>
