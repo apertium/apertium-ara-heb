@@ -7,3 +7,6 @@ all:
 	lt-comp rl apertium-ara-heb.ara-heb.dix heb-ara.autobil.bin
 	lrx-comp apertium-ara-heb.ara-heb.lrx ara-heb.autolex.bin
 	lrx-comp apertium-ara-heb.heb-ara.lrx heb-ara.autolex.bin
+	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t1x heb-ara.t1x.bin
+	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t2x heb-ara.t2x.bin
+	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t3x heb-ara.t3x.bin

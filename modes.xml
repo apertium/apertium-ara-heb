@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+  <!-- == Arabic → Hebrew == -->
+ 
+  <mode name="ara-heb" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.ara-heb.t2x"/>
+        <file name="ara-heb.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.ara-heb.t3x"/>
+        <file name="ara-heb.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="ara-heb.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="ara-heb.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ara-heb-anmor">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ara-heb-tagger">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="ara-heb-biltrans">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  <mode name="ara-heb-lextor">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -t">
+        <file name="ara-heb.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+ 
+
+  <mode name="ara-heb-chunker">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="ara-heb.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="ara-heb-interchunk">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="ara-heb.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.ara-heb.t2x"/>
+        <file name="ara-heb.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ara-heb-postchunk">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="ara-heb.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.ara-heb.t2x"/>
+        <file name="ara-heb.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.ara-heb.t3x"/>
+        <file name="ara-heb.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ara-heb-generador">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="ara-heb.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.ara-heb.t2x"/>
+        <file name="ara-heb.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.ara-heb.t3x"/>
+        <file name="ara-heb.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="ara-heb.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  <mode name="ara-heb-debug" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="ara-heb.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ara-heb.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ara-heb.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b -b">
+        <file name="apertium-ara-heb.ara-heb.t1x"/>
+        <file name="ara-heb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.ara-heb.t2x"/>
+        <file name="ara-heb.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.ara-heb.t3x"/>
+        <file name="ara-heb.t3x.bin"/>
+      </program>
+      <program name="lt-proc -d">
+        <file name="ara-heb.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <!-- == Hebrew → Arabic == -->
+ 
+  <mode name="heb-ara" install="yes">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.heb-ara.t2x"/>
+        <file name="heb-ara.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.heb-ara.t3x"/>
+        <file name="heb-ara.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="heb-ara.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="heb-ara-anmor">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="heb-ara-tagger">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="heb-ara-biltrans">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  <mode name="heb-ara-lextor">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -t">
+        <file name="heb-ara.autolex.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+ 
+
+  <mode name="heb-ara-chunker">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="heb-ara.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="heb-ara-interchunk">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="heb-ara.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.heb-ara.t2x"/>
+        <file name="heb-ara.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="heb-ara-postchunk">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="heb-ara.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.heb-ara.t2x"/>
+        <file name="heb-ara.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.heb-ara.t3x"/>
+        <file name="heb-ara.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="heb-ara-generador">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="heb-ara.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.heb-ara.t2x"/>
+        <file name="heb-ara.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.heb-ara.t3x"/>
+        <file name="heb-ara.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="heb-ara.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
+  <mode name="heb-ara-debug" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="heb-ara.automorf.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="heb-ara.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="heb-ara.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b -b">
+        <file name="apertium-ara-heb.heb-ara.t1x"/>
+        <file name="heb-ara.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ara-heb.heb-ara.t2x"/>
+        <file name="heb-ara.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ara-heb.heb-ara.t3x"/>
+        <file name="heb-ara.t3x.bin"/>
+      </program>
+      <program name="lt-proc -d">
+        <file name="heb-ara.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+</modes>
