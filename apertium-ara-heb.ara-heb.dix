@@ -5,12 +5,14 @@
 <sdefs>
     <sdef n="n"		c="Noun"/>
     <sdef n="adv"	c="Adverb"/>
-	<sdef n="adj"	c="Adjective"/>
+		<sdef n="adj"	c="Adjective"/>
     <sdef n="np"	c="Proper noun"/>
     <sdef n="post"	c="Postposition"/>
-    <sdef n="cnjcoo"c="Co-ordinating conjunction"/>
+    <sdef n="cnjcoo"	c="Co-ordinating conjunction"/>
     <sdef n="cm"	c="Comma"/>
     <sdef n="sent"	c="Sentence marker"/>
+    <sdef n="m"	c="Male"/>
+    <sdef n="f"	c="Female"/>
 </sdefs>
 
 
@@ -76,13 +78,13 @@
 	<e><p><l>دائما<s n="adv"/></l><r>תמיד<s n="adv"/></r></p></e>
 
 	<!-- SECTION: Punctuation -->
-	<e><p><l>؟<s ="sent"/></l><r>؟<s n="sent"/></r></p></e>
-	<e><p><l>.<s ="sent"/></l><r>.<s n="sent"/></r></p></e>
-	<e><p><l>!<s ="sent"/></l><r>!<s n="sent"/></r></p></e>
-	<e><p><l>:<s ="sent"/></l><r>:<s n="sent"/></r></p></e>
-	<e><p><l>؛<s ="sent"/></l><r>؛<s n="sent"/></r></p></e>
-	<e><p><l>"<s ="sent"/></l><r>"<s n="sent"/></r></p></e>
-	<e><p><l>،<s ="cm"/></l><r>،<s n="cm"/></r></p></e>
+	<e><p><l>؟<s n="sent"/></l><r>؟<s n="sent"/></r></p></e>
+	<e><p><l>.<s n="sent"/></l><r>.<s n="sent"/></r></p></e>
+	<e><p><l>!<s n="sent"/></l><r>!<s n="sent"/></r></p></e>
+	<e><p><l>:<s n="sent"/></l><r>:<s n="sent"/></r></p></e>
+	<e><p><l>؛<s n="sent"/></l><r>؛<s n="sent"/></r></p></e>
+	<e><p><l>"<s n="sent"/></l><r>"<s n="sent"/></r></p></e>
+	<e><p><l>،<s n="cm"/></l><r>،<s n="cm"/></r></p></e>
 		
 </section>
 </dictionary>
