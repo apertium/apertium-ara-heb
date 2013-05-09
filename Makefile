@@ -10,3 +10,5 @@ all:
 	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t1x heb-ara.t1x.bin
 	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t2x heb-ara.t2x.bin
 	apertium-preprocess-transfer apertium-ara-heb.heb-ara.t3x heb-ara.t3x.bin
+	apertium-gen-modes modes.xml
+	cp *.mode modes/
