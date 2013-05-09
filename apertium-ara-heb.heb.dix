@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
-  <alphabet>אבגדהוזחטיכךלמםנןסעפףצץקרשת•ﭏ</alphabet>
+  <alphabet>אבגדהוזחטיכךלמםנןסעפףצץקרשת•ﭏ'</alphabet>
   <sdefs>
     <sdef n="n"           c="Noun"/>
     <sdef n="pr"          c="Preposition"/>
@@ -6682,8 +6682,21 @@
     
   </pardefs>
   <section id="main" type="standard">
-
-    <!-- SECTION: Determiners -->
+	<!-- SECTION: Verbs from "Where is James?" -->
+	<e lm="היה"><p><l>היה</l><r><s n="vblex"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+	<e lm="הסתכל"><p><l>מסתכלת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="התחבא"><p><l>מתחבא</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="sg"/></r></p></e>
+	<e lm="ספר"><p><l>סופרת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="ספר"><p><l>לספור</l><r><s n="vblex"/><s n="inf"/></r></p></e>
+	<e lm="חפש"><p><l>מחפשת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>	
+	<e lm="קבל"><p><l>מקבלת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="קבל"><p><l>מקבלים</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="pl"/></r></p></e>
+	<e lm="עמד"><p><l>עומדת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="הקשיב"><p><l>מקשיבה</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="התקרב"><p><l>מתקרבת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
+	<e lm="אשר"><p><l>מאושרים</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="pl"/></r></p></e>	
+	
+	<!-- SECTION: Determiners -->
 
     <e lm="ה"><i></i><par n="ה__det"/></e>
     <e lm="זה" c="this/that"><i></i><par n="/זה__det"/></e>
