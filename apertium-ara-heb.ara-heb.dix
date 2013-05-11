@@ -3,30 +3,53 @@
 <alphabet/>
 
 <sdefs>
-    <sdef n="n"		c="Noun"/>
-    <sdef n="adv"	c="Adverb"/>
-		<sdef n="adj"	c="Adjective"/>
-    <sdef n="np"	c="Proper noun"/>
-    <sdef n="post"	c="Postposition"/>
+    <sdef n="n"			c="Noun"/>
+	<sdef n="vblex"     c="Verb, lexical"/>
+    <sdef n="adv"		c="Adverb"/>
+	<sdef n="adj"		c="Adjective"/>
+    <sdef n="np"		c="Proper noun"/>
+    <sdef n="post"		c="Postposition"/>
+	<sdef n="pr"        c="Preposition"/>
+	<sdef n="prn"   	c="Pronoun"/>
     <sdef n="cnjcoo"	c="Co-ordinating conjunction"/>
-    <sdef n="cm"	c="Comma"/>
-    <sdef n="sent"	c="Sentence marker"/>
-    <sdef n="m"	c="Male"/>
-    <sdef n="f"	c="Female"/>
+	<sdef n="cnjsub"    c="Sub-ordinating conjunction"/>
+	<sdef n="det"       c="Determiner"/>
+	<sdef n="ij"        c="Interjection"/>
+    <sdef n="cm"		c="Comma"/>
+    <sdef n="sent"		c="Sentence marker"/>
+	<sdef n="num"       c="Numeral"/>
+	
+	<sdef n="m"			c="Male"/>
+	<sdef n="f"			c="Female"/>
+	<sdef n="def"       c="Definite"/>
+	<sdef n="ind"       c="Indefinite"/>
 </sdefs>
 
 
 <section id="main" type="standard">
 
+	<!-- SECTION: Determiners -->
+	<e><p><l>ال<s n="det"/></l><r>ה<s n="det"/></r></p></e>
+	<e><p><l>خمسة<s n="det"/></l><r>חמש<s n="det"/></r></p></e> <!-- TODO do numbers properly -->
+	<e><p><l>ستة<s n="det"/></l><r>שש<s n="det"/></r></p></e>
+	<e><p><l>إثنين<s n="det"/></l><r>שני<s n="det"/></r></p></e>
+	<e><p><l>هذا<s n="det"/></l><r>זה<s n="det"/></r></p></e>
+	<e><p><l>هذه<s n="det"/></l><r>זאת<s n="det"/></r></p></e>	
+	
 	<!-- SECTION: Conjunctions -->
 	<e><p><l>لكن<s n="cnjcoo"/></l><r>אבל<s n="cnjcoo"/></r></p></e>
 	<e><p><l>أو<s n="cnjcoo"/></l><r>או<s n="cnjcoo"/></r></p></e>
 	<e><p><l>و<s n="cnjcoo"/></l><r>ו<s n="cnjcoo"/></r></p></e>
 	<e><p><l>لأن<s n="cnjcoo"/></l><r>כי<s n="cnjcoo"/></r></p></e>
+	<e><p><l>أن<s n="cnjsub"/></l><r>ש<s n="cnjsub"/></r></p></e>
+	
+	<!-- SECTION: Pronouns -->
+	<e><p><l>personal subject pronouns<s n="prn"/></l><r>prpers<s n="prn"/></r></p></e>
+	<e><p><l>ماذا<s n="prn"/></l><r>מה<s n="prn"/></r></p></e>
 	
 	<!-- SECTION: Nouns -->
 	<e><p><l>أخ<s n="n"/></l><r>אח<s n="n"/></r></p></e>
-	<e><p><l>أم<s n="n"/></l><r>אמא<s n="n"/></r></p></e>
+	<e><p><l>أم<s n="n"/></l><r>אם<s n="n"/></r></p></e>
 	<e><p><l>ناس<s n="n"/></l><r>אנשים<s n="n"/></r></p></e>
 	<e><p><l>بيت<s n="n"/></l><r>בית<s n="n"/></r></p></e>
 	<e><p><l>عمر<s n="n"/><s n="m"/></l><r>בן<s n="n"/><s n="m"/></r></p></e> <!--sort of a kludge (TODO add suffix)-->
@@ -67,16 +90,57 @@
 	<e><p><l>سعيد<s n="adj"/></l><r>שמח<s n="adj"/></r></p></e>
 
 	<!-- SECTION: Adverbs -->
+	<e><p><l>ثم<s n="adv"/></l><r>אז<s n="adv"/></r></p></e>
+	<e><p><l>أين<s n="adv"/></l><r>איפה<s n="adv"/></r></p></e>
 	<e><p><l>أمس<s n="adv"/></l><r>אתמול<s n="adv"/></r></p></e>
 	<e><p><l>معا<s n="adv"/></l><r>ביחד<s n="adv"/></r></p></e>
 	<e><p><l>أيضا<s n="adv"/></l><r>גם<s n="adv"/></r></p></e>
 	<e><p><l>اليوم<s n="adv"/></l><r>היום<s n="adv"/></r></p></e>
+	<e><p><l>ربما<s n="adv"/></l><r>כנראה<s n="adv"/></r></p></e>	
+	<e><p><l>لا<s n="adv"/></l><r>לא<s n="adv"/></r></p></e>
+	<e><p><l>ما<s n="adv"/></l><r>לא<s n="adv"/></r></p></e>
 	<e><p><l>ببطء<s n="adv"/></l><r>לאט<s n="adv"/></r></p></e>
+	<e><p><l>لماذا<s n="adv"/></l><r>למה<s n="adv"/></r></p></e>
 	<e><p><l>جدا<s n="adv"/></l><r>מאוד<s n="adv"/></r></p></e>
 	<e><p><l>بسرعة<s n="adv"/></l><r>מהר<s n="adv"/></r></p></e>
 	<e><p><l>الآن<s n="adv"/></l><r>עכשיו<s n="adv"/></r></p></e>
 	<e><p><l>دائما<s n="adv"/></l><r>תמיד<s n="adv"/></r></p></e>
 
+	<!-- SECTION: Prepositions -->
+	<e><p><l>إلى<s n="pr"/></l><r>אל<s n="pr"/></r></p></e>
+	<e><p><l>في<b/>ال<s n="pr"/></l><r>ב<s n="pr"/></r></p></e>
+	<e><p><l>في<s n="pr"/></l><r>ב<s n="pr"/></r></p></e>
+	<e><p><l>إلى<s n="pr"/></l><r>ל<s n="pr"/></r></p></e>
+	<e><p><l>أن<s n="pr"/></l><r>ל<s n="pr"/></r></p></e>
+	<e><p><l>أمام<s n="pr"/></l><r>לפני<s n="pr"/></r></p></e>
+	<e><p><l>من<s n="pr"/></l><r>מ<s n="pr"/></r></p></e>
+	<e><p><l>مع<s n="pr"/></l><r>עם<s n="pr"/></r></p></e>
+	
+	<!-- SECTION: Verbs -->
+	<e><p><l>حب<s n="vblex"/></l><r>אוהב<s n="vblex"/></r></p></e>
+	<e><p><l>أكل<s n="vblex"/></l><r>אכל<s n="vblex"/></r></p></e>
+	<e><p><l>قال<s n="vblex"/></l><r>אמר<s n="vblex"/></r></p></e>
+	<e><p><l>تكلم<s n="vblex"/></l><r>דיבר<s n="vblex"/></r></p></e>
+	<e><p><l>حكى<s n="vblex"/></l><r>הגיע<s n="vblex"/></r></p></e>
+	<e><p><l>ذهب<s n="vblex"/></l><r>הלך<s n="vblex"/></r></p></e>
+	<e><p><l>عرف<s n="vblex"/></l><r>ידע<s n="vblex"/></r></p></e>
+	<e><p><l>استطاع<s n="vblex"/></l><r>יכל<s n="vblex"/></r></p></e>
+	<e><p><l>جلس<s n="vblex"/></l><r>ישב<s n="vblex"/></r></p></e>
+	<e><p><l>تكلم<s n="vblex"/></l><r>מדבר<s n="vblex"/></r></p></e>
+	<e><p><l>وجد<s n="vblex"/></l><r>מצא<s n="vblex"/></r></p></e>
+	<e><p><l>حاول<s n="vblex"/></l><r>ניסה<s n="vblex"/></r></p></e>
+	<e><p><l>عدد<s n="vblex"/></l><r>ספר<s n="vblex"/></r></p></e>
+	<e><p><l>فعل<s n="vblex"/></l><r>עשה<s n="vblex"/></r></p></e>
+	<e><p><l>ضحك<s n="vblex"/></l><r>צחק<s n="vblex"/></r></p></e>
+	<e><p><l>رأى<s n="vblex"/></l><r>ראה<s n="vblex"/></r></p></e>
+	<e><p><l>أراد<s n="vblex"/></l><r>רצה<s n="vblex"/></r></p></e>
+	<e><p><l>سمع<s n="vblex"/></l><r>שומע<s n="vblex"/></r></p></e>
+	<e><p><l>لعب<s n="vblex"/></l><r>שיחק<s n="vblex"/></r></p></e>
+	<e><p><l>شرب<s n="vblex"/></l><r>שתה<s n="vblex"/></r></p></e>
+
+	<!-- SECTION: Interjections -->
+	<e><p><l>لا<s n="ij"/></l><r>לא<s n="ij"/></r></p></e>
+	
 	<!-- SECTION: Punctuation -->
 	<e><p><l>؟<s n="sent"/></l><r>؟<s n="sent"/></r></p></e>
 	<e><p><l>.<s n="sent"/></l><r>.<s n="sent"/></r></p></e>
@@ -85,6 +149,21 @@
 	<e><p><l>؛<s n="sent"/></l><r>؛<s n="sent"/></r></p></e>
 	<e><p><l>"<s n="sent"/></l><r>"<s n="sent"/></r></p></e>
 	<e><p><l>،<s n="cm"/></l><r>،<s n="cm"/></r></p></e>
+	<e><p><l>0<s n="num"/></l><r>0<s n="num"/></r></p></e>
+	<e><p><l>1<s n="num"/></l><r>1<s n="num"/></r></p></e>
+	<e><p><l>2<s n="num"/></l><r>2<s n="num"/></r></p></e>
+	<e><p><l>3<s n="num"/></l><r>3<s n="num"/></r></p></e>
+	<e><p><l>4<s n="num"/></l><r>4<s n="num"/></r></p></e>
+	<e><p><l>5<s n="num"/></l><r>5<s n="num"/></r></p></e>
+	<e><p><l>6<s n="num"/></l><r>6<s n="num"/></r></p></e>
+	<e><p><l>7<s n="num"/></l><r>7<s n="num"/></r></p></e>
+	<e><p><l>8<s n="num"/></l><r>8<s n="num"/></r></p></e>
+	<e><p><l>9<s n="num"/></l><r>9<s n="num"/></r></p></e>
+	<e><p><l>10<s n="num"/></l><r>10<s n="num"/></r></p></e>
+	<e><p><l>11<s n="num"/></l><r>11<s n="num"/></r></p></e>
+	
+	<!-- SECTION: Need categorization/work -->
+	<e r="RL"><p><l></l><r>את<s n="pr"/></r></p></e>
 		
 </section>
 </dictionary>
