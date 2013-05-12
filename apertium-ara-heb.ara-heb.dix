@@ -44,7 +44,7 @@
 	<e><p><l>أن<s n="cnjsub"/></l><r>ש<s n="cnjsub"/></r></p></e>
 	
 	<!-- SECTION: Pronouns -->
-	<e><p><l>personal subject pronouns<s n="prn"/></l><r>prpers<s n="prn"/></r></p></e>
+	<e><p><l>prpers<s n="prn"/></l><r>prpers<s n="prn"/></r></p></e>
 	<e><p><l>ماذا<s n="prn"/></l><r>מה<s n="prn"/></r></p></e>
 	
 	<!-- SECTION: Nouns -->
