@@ -34,6 +34,7 @@
     <sdef n="sp"          c="Singular / plural"/>
     
     <sdef n="vblex"       c="Verb, lexical"/>
+	<sdef n="vaux"		  c="Auxillary verb"/>
     <sdef n="past"        c="Past tense"/>
     <sdef n="inf"         c="Infinitive"/>
     <sdef n="fut"         c="Future"/>
@@ -118,6 +119,15 @@
       <e><p><l/><r><s n="cnjadv"/></r></p></e>
     </pardef>
 
+	<!-- SECTION: Auxillary Verbs -->
+	<pardef n="האם__vaux">
+      <e><p><l/><r><s n="vaux"/><s n="itg"/></r></p></e>
+    </pardef>
+	
+	<pardef n="יש__vaux">
+      <e><p><l/><r><s n="vaux"/></r></p></e>
+    </pardef>
+	
     <!-- SECTION: Prepositions -->
 
     <pardef n="ללא__pr">
@@ -229,6 +239,7 @@
     <pardef n="/זה__det" c="this/that">
       <e>       <p><l>זה</l> <r>זה<s n="det"/><s n="dem"/><s n="m"/><s n="sg"/></r></p></e>
       <e>       <p><l>זו</l> <r>זה<s n="det"/><s n="dem"/><s n="f"/><s n="sg"/></r></p></e>
+	  <e>       <p><l>זאת</l> <r>זה<s n="det"/><s n="dem"/><s n="f"/><s n="sg"/></r></p></e> <!-- TODO rules for which one to use? -->
       <e>       <p><l>אלה</l><r>זה<s n="det"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>אלו</l><r>זה<s n="det"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
@@ -6485,6 +6496,11 @@
       <e><p>          <l>יות</l><r><s n="n"/><s n="f"/><s n="pl"/><s n="cons"/></r></p></e>
     </pardef>
 
+    <pardef n="אמא__n_f">
+      <!-- TODO complete pardef -->
+      <e><p>          <l></l><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p>          <l>הות</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
     
     <pardef n="S__שק" c="Possessive suffixes (mine, theirs, …) for feminine(?) nouns">
       <!-- used by several _m_f pardefs below, TODO check if all of the actually work with this pardef! -->
@@ -6700,7 +6716,13 @@
       <e><p><l>נים</l><r>ן<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>נות</l><r>ן<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
- 
+	
+    <pardef n="קט/ן__adj">
+      <e><p><l>ן</l><r>ן<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>נה</l><r>ן<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>נים</l><r>ן<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>נות</l><r>ן<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
     
   </pardefs>
   <section id="main" type="standard">
@@ -6710,13 +6732,17 @@
 	<e lm="התחבא"><p><l>מתחבא</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="sg"/></r></p></e>
 	<e lm="ספר"><p><l>סופרת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
 	<e lm="ספר"><p><l>לספור</l><r><s n="vblex"/><s n="inf"/></r></p></e>
+	<e lm="שמע"><p><l>לשמוע</l><r><s n="vblex"/><s n="inf"/></r></p></e>
 	<e lm="חפש"><p><l>מחפשת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>	
 	<e lm="קבל"><p><l>מקבלת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
 	<e lm="קבל"><p><l>מקבלים</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="pl"/></r></p></e>
 	<e lm="עמד"><p><l>עומדת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
 	<e lm="הקשיב"><p><l>מקשיבה</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
 	<e lm="התקרב"><p><l>מתקרבת</l><r><s n="vblex"/><s n="pres"/><s n="f"/><s n="sg"/></r></p></e>
-	<e lm="אשר"><p><l>מאושרים</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="pl"/></r></p></e>	
+	<e lm="אשר"><p><l>מאושרים</l><r><s n="vblex"/><s n="pres"/><s n="m"/><s n="pl"/></r></p></e>
+	<e lm="האם"><i>האם</i><par n="האם__vaux"/></e>
+	<e lm="יש"><i>יש</i><par n="יש__vaux"/></e>
+	<e lm="חייב"><i>חייב</i><par n="יש__vaux"/></e>
 	
 	<!-- SECTION: Determiners -->
 
@@ -12537,7 +12563,8 @@
     <e lm="צלזיוס"><par n="ה"/><i>צלזיוס</i><par n="לס__n_m"/></e>
     <e lm="רחבה"><par n="ה"/><i>רחב</i><par n="ריצ/ה__n_f"/></e>
     <e lm="אפרסק"><par n="ה"/><i>אפרסק</i><par n="שק__n_m"/></e>
-    <e lm="אבא"><par n="ה"/><i>אבא</i><par n="לס__n_m"/></e>
+    <e lm="אמא"><par n="ה"/><i>אמא</i><par n="אמא__n_f"/></e>
+	<e lm="אבא"><par n="ה"/><i>אבא</i><par n="לס__n_m"/></e>
     <e lm="כעך"><par n="ה"/><i>כע</i><par n="ח/ך__n_m"/></e>
     <e lm="אנטיפתיה"><par n="ה"/><i>אנטיפתי</i><par n="חי/ה__n_f"/></e>
     <e lm="מערום"><par n="ה"/><i>מערו</i><par n="ד/ם__n_m"/></e>
@@ -20039,7 +20066,7 @@
     <e lm="מפורסם"><i>מפורס</i><par n="מפורס/ם__adj"/></e>
     
     <e lm="נטען"><i>נטע</i><par n="נטע/ן__adj"/></e>
-	<e lm="קטן"><i>קט</i><par n="נטע/ן__adj"/></e>
+	<e lm="קטן"><i>קט</i><par n="קט/ן__adj"/></e>
     
     <e lm="שייך"><i>שיי</i><par n="שיי/ך__adj"/></e>
     <e lm="אתני"><i>אתני</i><par n="שמי__adj"/></e>
@@ -20077,9 +20104,11 @@
     <e lm="במקרה" c="by any chance"><i>במקרה</i><par n="איך__adv"/></e>
     <e lm="מאיפה" c="from where"><i>מאיפה</i><par n="איך__adv"/></e>
     <e lm="עד לאן" c="till where"><i>עד<b/>לאן</i><par n="איך__adv"/></e>
+	<e lm="לאן" c="to where"><i>לאן</i><par n="איך__adv"/></e>
     <e lm="באיזו זכות" c="by what right"><i>באיזו<b/>זכות</i><par n="איך__adv"/></e>
 
     <e lm="איפה"><i>איפה</i><par n="איך__adv"/></e>
+	<e lm="היכן"><i>היכן</i><par n="איך__adv"/></e>
     <e lm="מה"><i>מה</i><par n="איך__adv"/></e>
 
     <e lm="אפילו לא"><i>אפילו<b/>לא</i><par n="עכשיו__adv"/></e>
@@ -20181,6 +20210,7 @@
     <e lm="מאוד"><i>מאוד</i><par n="עכשיו__adv"/></e>
     <e lm="תמיד"><i>תמיד</i><par n="עכשיו__adv"/></e>
 	<e lm="היום"><i>היום</i><par n="עכשיו__adv"/></e>
+	<e lm="לאט"><i>לאט</i><par n="עכשיו__adv"/></e>
 
     <!-- SECTION: manually created verb entries that weren't in hspell: -->
     <e lm="מחא כפיים"><p><l>מחא</l><r>מחא<s n="vblex"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><p><l><b/>כפיים</l><r><g><b/>כפיים</g></r></p></e>

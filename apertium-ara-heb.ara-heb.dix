@@ -137,6 +137,9 @@
 	<e><p><l>سمع<s n="vblex"/></l><r>שומע<s n="vblex"/></r></p></e>
 	<e><p><l>لعب<s n="vblex"/></l><r>שיחק<s n="vblex"/></r></p></e>
 	<e><p><l>شرب<s n="vblex"/></l><r>שתה<s n="vblex"/></r></p></e>
+	<e><p><l>هناك<s n="adv"/></l><r>יש<s n="vaux"/></r></p></e>
+	<e><p><l>هل<s n="vaux"/></l><r>האם<s n="vaux"/></r></p></e>
+	<e><p><l>ابد<s n="vaux"/></l><r>חייב<s n="vaux"/></r></p></e>
 
 	<!-- SECTION: Interjections -->
 	<e><p><l>لا<s n="ij"/></l><r>לא<s n="ij"/></r></p></e>
