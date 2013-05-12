@@ -5,6 +5,7 @@
 <sdefs>
     <sdef n="n"			c="Noun"/>
 	<sdef n="vblex"     c="Verb, lexical"/>
+	<sdef n="vaux"     c="Auxillary verb"/>
     <sdef n="adv"		c="Adverb"/>
 	<sdef n="adj"		c="Adjective"/>
     <sdef n="np"		c="Proper noun"/>
