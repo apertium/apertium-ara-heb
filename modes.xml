@@ -29,9 +29,11 @@
       <program name="lt-proc $1">
         <file name="ara-heb.autogen.bin"/>
       </program>
+<!--
       <program name="lt-proc -p">
         <file name="ara-heb.autopgen.bin"/>
       </program>
+-->
     </pipeline>
   </mode>
 
