@@ -2,7 +2,6 @@
 /AUTHORS eol=lf
 /COPYING -text
 /ChangeLog -text
-/Makefile -text
 /Makefile.am -text
 /NEWS -text
 /README -text

@@ -11,22 +11,22 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
-	$(PREFIX1).automorf.bin \ 
+	$(PREFIX1).automorf.bin \
 	$(PREFIX1).prob \
 	$(PREFIX1).rlx.bin \
 	$(PREFIX1).autobil.bin \
 		$(PREFIX1).autolex.bin \
-	$(PREFIX1).autogen.bin \ 
+	$(PREFIX1).autogen.bin \
 	$(PREFIX1).autopgen.bin \
 	$(PREFIX1).t1x.bin \
 	$(PREFIX1).t2x.bin \
 	$(PREFIX1).t3x.bin \
-	$(PREFIX2).automorf.bin \ 
+	$(PREFIX2).automorf.bin \
 	$(PREFIX2).prob \
 	$(PREFIX2).rlx.bin \
 	$(PREFIX2).autobil.bin \
 		$(PREFIX2).autolex.bin \
-	$(PREFIX2).autogen.bin \ 
+	$(PREFIX2).autogen.bin \
 	$(PREFIX2).autopgen.bin \
     $(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
@@ -208,4 +208,3 @@ test: all
 	@echo "house" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
-
