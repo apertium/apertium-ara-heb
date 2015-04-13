@@ -1,4 +1,5 @@
 * text=auto !eol
+/AUTHORS eol=lf
 /Makefile -text
 /apertium-ara-heb.ara-heb.dix -text
 /apertium-ara-heb.ara-heb.lrx -text
