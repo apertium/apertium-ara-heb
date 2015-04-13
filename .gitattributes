@@ -1,19 +1,23 @@
 * text=auto !eol
 /AUTHORS eol=lf
+/COPYING -text
+/ChangeLog -text
 /Makefile -text
+/Makefile.am -text
+/NEWS -text
+/README -text
 /apertium-ara-heb.ara-heb.dix -text
 /apertium-ara-heb.ara-heb.lrx -text
 /apertium-ara-heb.ara-heb.t1x -text
 /apertium-ara-heb.ara-heb.t2x -text
 /apertium-ara-heb.ara-heb.t3x -text
-/apertium-ara-heb.ara.dix -text
 /apertium-ara-heb.heb-ara.lrx -text
 /apertium-ara-heb.heb-ara.t1x -text
 /apertium-ara-heb.heb-ara.t2x -text
 /apertium-ara-heb.heb-ara.t3x -text
-/apertium-ara-heb.heb.dix -text
-/ara-heb.prob -text
-/heb-ara.prob -text
+/autogen.sh -text
+/configure.ac -text
+dev/to_merge_apertium-ara-heb.ara.dix -text
 /modes.xml -text
 texts/story.ara.txt -text svneol=unset#application/octet-stream
 texts/story.heb.txt -text
