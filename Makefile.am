@@ -201,10 +201,10 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "house" | apertium -d . ara-heb | tee .test-mt
-	@echo "house" > .test-ref
+	echo "طاولة" | apertium -d . ara-heb | tee .test-mt
+	@echo "שולחן" > .test-ref
 	@diff .test-ref .test-mt
-	echo "house" | apertium -d . heb-ara | tee .test-mt
-	@echo "house" > .test-ref
+	echo "שולחן" | apertium -d . heb-ara | tee .test-mt
+	@echo "طاولة" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
