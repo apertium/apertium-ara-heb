@@ -89,8 +89,8 @@
 	<e><p><l>ستة<s n="num"/></l><r>שישה<s n="num"/></r></p></e>
 	<e><p><l>إثنين<s n="num"/></l><r>שני<s n="num"/></r></p></e>
 	<e><p><l>هذا<s n="det"/></l><r>זה<s n="det"/></r></p></e>
-	<e><p><l>هذه<s n="det"/></l><r>זאת<s n="det"/></r></p></e>	
-	
+	<e><p><l>هذه<s n="det"/></l><r>זאת<s n="det"/></r></p></e>
+
 	<!-- SECTION: Conjunctions -->
 	<e><p><l>لكن<s n="cnjcoo"/></l><r>אבל<s n="cnjcoo"/></r></p></e>
 	<e><p><l>أو<s n="cnjcoo"/></l><r>או<s n="cnjcoo"/></r></p></e>
@@ -100,11 +100,11 @@
 	<e><p><l>و<s n="cnjcoo"/></l><r>ו<s n="cnjcoo"/></r></p></e>
 	<e><p><l>لأن<s n="cnjcoo"/></l><r>כי<s n="cnjcoo"/></r></p></e>
 	<e><p><l>أن<s n="cnjsub"/></l><r>ש<s n="cnjsub"/></r></p></e>
-	
+
 	<!-- SECTION: Pronouns -->
 	<e><p><l>prpers<s n="prn"/></l><r>prpers<s n="prn"/></r></p></e>
 	<e><p><l>شئ<b/>أي<s n="prn"/></l><r>כלום<s n="prn"/></r></p></e>
-	
+
 	<!-- SECTION: Nouns -->
 	<e><p><l>أخ<s n="n"/></l><r>אח<s n="n"/></r></p><par n="num-case"/></e>
 	<e><p><l>أخت<s n="n"/></l><r>אחות<s n="n"/></r></p><par n="num-case"/></e>
@@ -140,6 +140,7 @@
 	<e><p><l>رأس<s n="n"/></l><r>ראש<s n="n"/></r></p><par n="num-case"/></e>
 	<e><p><l>سوت<s n="n"/></l><r>רחש<s n="n"/></r></p><par n="num-case"/></e>
 	<e><p><l>طاولة<s n="n"/><s n="f"/><s n="nn"/></l><r>שולחן<s n="n"/><s n="m"/></r></p><par n="num-case"/></e>
+	<e><p><l>حب<s n="n"/><s n="m"/><s n="nn"/></l><r>אוהב<s n="n"/><s n="m"/></r></p><par n="num-case"/></e>
 
 	<!-- SECTION: Proper nouns -->
 	<e><p><l>جيمس<s n="np"/></l><r>ג'ימס<s n="np"/></r></p></e>
@@ -160,7 +161,7 @@
 	<e><p><l>معا<s n="adv"/></l><r>ביחד<s n="adv"/></r></p></e>
 	<e><p><l>أيضا<s n="adv"/></l><r>גם<s n="adv"/></r></p></e>
 	<e><p><l>اليوم<s n="adv"/></l><r>היום<s n="adv"/></r></p></e>
-	<e><p><l>ربما<s n="adv"/></l><r>כנראה<s n="adv"/></r></p></e>	
+	<e><p><l>ربما<s n="adv"/></l><r>כנראה<s n="adv"/></r></p></e>
 	<e><p><l>لا<s n="adv"/></l><r>לא<s n="adv"/></r></p></e>
 	<e><p><l>ما<s n="adv"/></l><r>לא<s n="adv"/></r></p></e>
 	<e><p><l>ببطء<s n="adv"/></l><r>לאט<s n="adv"/></r></p></e>
@@ -181,11 +182,10 @@
 	<e><p><l>أمام<s n="pr"/></l><r>לפני<s n="pr"/></r></p></e>
 	<e><p><l>من<s n="pr"/></l><r>מ<s n="pr"/></r></p></e>
 	<e><p><l>مع<s n="pr"/></l><r>עם<s n="pr"/></r></p></e>
-	
+
 	<!-- SECTION: Verbs -->
-	<e><p><l>حب<s n="vblex"/><s n="pres"/></l><r>אוהב<s n="n"/></r></p><par n="num-case"/></e>
 	<e><p><l>أكل<s n="vblex"/></l><r>אכל<s n="vblex"/></r></p></e>
-	<e><p><l>قال<s n="vblex"/></l><r>אמר<s n="vblex"/></r></p></e>
+	<e c="speak, utter"><p><l>قال<s n="vblex"/></l><r>אמר<s n="vblex"/></r></p></e>
 	<e><p><l>تكلم<s n="vblex"/></l><r>דיבר<s n="vblex"/></r></p></e>
 	<e><p><l>حكى<s n="vblex"/></l><r>הגיע<s n="vblex"/></r></p></e>
 	<e><p><l>ذهب<s n="vblex"/></l><r>הלך<s n="vblex"/></r></p></e>
@@ -212,7 +212,7 @@
 
 	<!-- SECTION: Interjections -->
 	<e><p><l>لا<s n="ij"/></l><r>לא<s n="ij"/></r></p></e>
-	
+
 	<!-- SECTION: Punctuation -->
 
      <!-- SECTION: Punctuation -->
@@ -247,10 +247,10 @@
 <e>       <p><l>XII<s n="num"/></l>               <r>XII<s n="num"/></r></p></e>
 <e>       <p><l>XVI<s n="num"/></l>               <r>XVI<s n="num"/></r></p></e>
 <e>       <p><l>XXIII<s n="num"/></l>             <r>XXIII<s n="num"/></r></p></e>
-	
+
 	<!-- SECTION: Need categorization/work -->
 	<e r="RL"><p><l></l><r>את<s n="pr"/></r></p></e>
-		
+
 </section>
 
 <section id="crossed-via-mlt" type="standard">
