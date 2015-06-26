@@ -1,6 +1,7 @@
 /*.bin
 /*.hfst
 /*.mode
+/*.prob
 /INSTALL
 /Makefile
 /Makefile.in
