@@ -1,0 +1,10 @@
+{
+    "ara-heb": {
+        "input": "ara-heb-input.txt",
+        "mode": "ara-heb"
+    },
+    "heb-ara": {
+        "input": "heb-ara-input.txt",
+        "mode": "heb-ara"
+    }
+}
